@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Téglalap</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="stilus.css">
 </head>
 <body>
-    
+    <h1 id="cim">Téglalap kerülete, területe</h1>
+
+    <input type="text" id="szam1">
+    <input type="text" id="szam2">
+    <button onclick="terker()">Számít</button>
+    <span id="kimenet"></span>
+    <script>
+        function terker()
+        {
+            var szam1 = document.getElementById("szam1").value;
+            var szam2 = document.getElementById("szam2").value;
+            var osszeg =parseInt(szam1) +parseInt(szam2);
+            document.getElementById("kimenet").innerHTML = osszeg;
+        }
+    </script>
+
+
+
 </body>
 </html>
