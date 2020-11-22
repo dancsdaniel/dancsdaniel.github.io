@@ -13,23 +13,52 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="stilus.css">
+
+    
+
+
 </head>
 <body>
+    
+
     <h1 id="cim">Téglalap kerülete, területe</h1>
 
-    <input type="text" id="szam1">
-    <input type="text" id="szam2">
-    <button onclick="terker()">Számít</button>
-    <span id="kimenet"></span>
+
+    
+            <div class="form-group">
+                <label for="a">A:</label>
+                <input type="text" class="form-control  input-lg" id="a">
+              </div>
+          
+        
+            <div class="form-group">
+                <label for="b">B:</label>
+                <input type="text" class="form-control input-lg" id="b">
+              </div>
+          
+      
+<div id="gomb">
+    <button onclick="terker()" class="btn btn-success btn-lg">Számít</button>
+</div>
     <script>
         function terker()
         {
-            var szam1 = document.getElementById("szam1").value;
-            var szam2 = document.getElementById("szam2").value;
-            var osszeg =parseInt(szam1) +parseInt(szam2);
-            document.getElementById("kimenet").innerHTML = osszeg;
+            var szam1 = document.getElementById("a").value;
+            var szam2 = document.getElementById("b").value;
+            var terulet=parseInt(szam1) * parseInt(szam2);
+            var kerulet=(2*parseInt(szam1))+(2*parseInt(szam2));
+            document.getElementById("kerulet").innerHTML = kerulet;
+            document.getElementById("terulet").innerHTML = terulet;
         }
     </script>
+<br>
+
+<p class="kozepre">Kerület:  <span id="kerulet"></span></p>    
+ 
+
+
+<p class="kozepre">Terület:  <span id="terulet"></span></p>      
+
 
 
 

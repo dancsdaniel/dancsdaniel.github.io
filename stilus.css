@@ -4,4 +4,19 @@
 
 body{
     background-image: url("hatter.jpg");
+    font-size: 36px;
+    font-family: Gerorgia;
+    color: green;
+}
+
+.form-group{
+    text-align: center;
+}
+
+#gomb{
+    text-align: center;
+}
+
+.kozepre{
+    text-align: center;
 }
